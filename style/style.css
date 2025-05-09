@@ -5,18 +5,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
     padding: 20px;
 }
 
 header {
-    background-color: #0077cc;
-    color: white;
+    background-color: #1f1f1f;
+    color: #ffffff;
     padding: 20px;
-    text-align: center;
+    text-aling: center;
     border-radius: 8px;
 }
 
@@ -26,21 +26,52 @@ section {
 
 h2 {
     margin-bottom: 10px;
-    color: #0077cc;
+    color: #bb86fc;
 }
 
 .card {
-    background-color: white;
+    background-color: #1e1e1e;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+a {
+    color: #03dac6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-links {
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #888;
 }
 
 footer {
     text-align: center;
     padding: 10px;
     margin-top: 30px;
-    font-size: 0.9em;
-    color: #555;
+    font-size: 0.9rem;
+    color: #888888;
 }

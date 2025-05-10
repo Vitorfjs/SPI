@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,51 +11,121 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #121212;
+    background-color: linear-gradient(135deg, #121212, #1f1f1f);
     color: #e0e0e0;
     padding: 20px;
 }
 
-header {
-    background-color: #1f1f1f;
-    color: #ffffff;
+main {
+    background-color: #181818;
     padding: 20px;
-    text-align: center;
     border-radius: 8px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navbar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #5e35b1;
+}
+
+.hero {
+    margin-top: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease both;
+    background-image: url('path/to/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.btn-cta {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #5e35b1;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-cta:hover {
+    background-color: #d39bfd;
 }
 
 section {
     margin: 20px 0;
-}
-
-h2 {
+    animation: fadeIn 0.6s ease both;
+  }
+  h2 {
     margin-bottom: 10px;
-    color: #bb86fc;
-}
-
-.card {
+    color: #5e35b1;
+  }
+  
+  /* Badges */
+  .badges {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .badges img {
+    height: 30px;
+  }
+  
+  /* Cards com animação */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .card {
     background-color: #1e1e1e;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-}
-
-a {
+    animation: fadeIn 0.6s ease both;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  }
+  
+  /* Links */
+  a {
     color: #03dac6;
-    text-decoration: none;
-}
-a:hover {
+  }
+  a:hover {
     text-decoration: underline;
-}
-
-.contact-links {
+  }
+  
+  /* Contato */
+  .contact-links {
     display: flex;
-    margin-top: 10px;
     gap: 20px;
-}
-
-.contact-btn {
+    margin-top: 10px;
+  }
+  .contact-btn {
     text-decoration: none;
     background-color: #1e1e1e;
     color: #ffffff;
@@ -60,18 +134,17 @@ a:hover {
     border-radius: 8px;
     transition: background-color 0.3s ease;
     font-weight: 500;
-}
-
-.contact-btn:hover {
+  }
+  .contact-btn:hover {
     background-color: #333;
-    color: #fff;
     border-color: #888;
-}
-
-footer {
+  }
+  
+  /* Rodapé */
+  footer {
     text-align: center;
     padding: 10px;
     margin-top: 30px;
     font-size: 0.9rem;
     color: #888888;
-}
+  }

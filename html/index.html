@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="../style/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Vitor Ferreira</h1>
+        <p>Dsenvolvedor em formação</p>
+        <a href="#projetos" class="btn-cta">Ver Projetos</a>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Sou um estudante de Ciência da Computação, entusiasta de tecnologia. Busco sempre aprender algo novo.</p>
+        </section>
+    
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="bages">
+                <img src="https://img.shields.io/badge/Java-ED8B00?logo=java&amp;logoColor=white" alt="Java">
+                <img src="https://img.shields.io/badge/Django-092E20?logo=django&amp;logoColor=white" alt="Django">
+                <img src="https://img.shields.io/badge/DjangoRestFramework-430098?logo=drf&amp;logoColor=white" alt="DjangoRestFramework">
+                <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&amp;logoColor=white" alt="Docker">
+                <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&amp;logoColor=white" alt="PHP">
+                <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=white" alt="HTML5">
+                <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=white" alt="CSS3">
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+
+            <div class="card">
+                <h3>Dockerized REST API Microservices with Nginx Reverse‑Proxy</h3>
+                <p>Ambiente de três APIs REST isoladas por Docker, cada uma com seu próprio banco de dados e rede interna.  
+                   Implementação de proxy reverso Nginx, phpMyAdmin e containers de backup, orquestrados em redes Docker distintas para garantir segurança e escalabilidade.
+                </p>
+                <a href="https://github.com/Vitorfjs/Redes" target="_blank">View on Github</a>
+            </div>
+
+            <div class="card">
+                <h3>Star Wars Characters API (Django & DRF)</h3>
+                <p>
+                    Aplicação em Django REST Framework que consome a SWAPI para listar, filtrar e sincronizar dados de  
+                    personagens do universo Star Wars em um banco local. Inclui autenticação JWT para operações seguras de CRUD.
+                </p>
+                <a href="https://github.com/Vitorfjs/Workshop-Fabrica-2024.2" target="_blank">View on Github</a>
+            </div>
+
+            <div class="card">
+                <h3>Game Registration & Avatar Selector</h3>
+                <p>
+                    Aplicativo Java (Eclipse) que gerencia registro/login de usuários, permite  
+                    escolher classe e personalizar avatar antes de iniciar a sessão de jogo.
+                </p>
+                <a href="https://github.com/Vitorfjs/Desafio-Logica-Netuno" target="_blank">View on Github</a>
+            </div>
+        </section>
+    
+        <section id="contato">
+            <h2>Contato</h2>
+            <div class="contact-links">
+                <a href="mailto:vitorsilva7.sje@gmial.com" class="contact-btn" target="_blank">
+                    📧 Email
+                </a>
+                <a href="https://github.com/Vitorfjs" class="contact-btn" target="_blank">
+                    🌐 GitHub
+                </a>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 Vitor Ferreira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
